@@ -37,7 +37,8 @@
 body {
     max-width: 100vw;
     position: relative;
-    background-color: #FCF9FB;
+    /* background-color: #FCF9FB; */
+    background-color: rgb(249, 249, 249, 1);
 }
 
 body::-webkit-scrollbar {
