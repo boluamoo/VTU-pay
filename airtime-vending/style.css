@@ -67,7 +67,6 @@ body::-webkit-scrollbar {
 
 .main {
     /* width: 43%; */
-    padding: 0 28.5%;
     margin: auto;
     padding-top: 69px;
     display: flex;
@@ -98,11 +97,13 @@ button {
 .purchase-title {
     font-weight: var(--bold);
     font-style: 28px;
+    color: black;
 }
 
 .purchase-option {
     display: flex;
     align-self: center;
+    flex-wrap: wrap;
     gap: 13px;
     color: #848484;
 }
@@ -118,6 +119,8 @@ button {
 
 .purchase-dashboard {
     display: flex;
+    width: 43%;
+    margin: auto;
     flex-direction: column;
     background-color: white;
     padding: 13px 45px 150px;
@@ -162,6 +165,7 @@ button {
     font-weight: var(--normal);
     font-size: 22px;
     padding: 4px 30px;
+    border-radius: 10px;
 }
 
 .airtime-form label {

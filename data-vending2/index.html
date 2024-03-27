@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airtime Vending</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Data Vending</title>
+    <link rel="stylesheet" href="../airtime-vending/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,29 +17,38 @@
     <div class="top-banner">
     </div>
     <div class="main">
-        <div class="main-heading red">Airtime</div>
+        <div class="main-heading red">Data</div>
         <div class="purchase-option">
-            <button class="buy-airtime red">Buy Airtime</button>
-            <button class="pay-bill">Pay A Bill</button>
+            <button class="">Send Money</button>
+            <button class="buy-airtime">Buy Airtime</button>
+            <button class="pay-bill red">Pay A Bill</button>
+            <button class="">Betting</button>
+            <button class="">Cardless Payments</button>
         </div>
         <div class="purchase-dashboard">
             <button type="submit" class="next-button">Next</button>
             <div class="airtime-back-button">
-                <img src="./assets/airtime-back.png" alt="" srcset="">
+                <img src="../airtime-vending/assets/airtime-back.png" alt="" srcset="">
             </div>
-            <div class="purchase-title red">Airtime</div>
+            <div class="purchase-title">Data</div>
             <form action="" class="airtime-form">
-                <label for="phone">Phone Number</label>
-                <input type="tel" name="" id="phone" placeholder="0701***545"><br><br>
-                <label for="network">Network</label>
+                <label for="service-provider">Service Provider</label>
                 <select name="network" id="network">
+                    <option value="mtn">MTN-NG</option>
+                    <option value="glo">Glo</option>
+                    <option value="airtel">Airtel</option>
+                </select><br><br>
+                <label for="package">Package</label>
+                <select name="package" id="package">
                     <option value="" selected disabled>Choose One</option>
                     <option value="mtn">MTN</option>
                     <option value="glo">Glo</option>
                     <option value="airtel">Airtel</option>
                 </select><br><br>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="" id="phone" placeholder="0701***545"><br><br>
                 <label for="amount">Amount</label>
-                <input type="number" name="" id="amount" min="0" step="0.5" placeholder="0.00"><br><br>
+                <input type="number" name="" id="amount" min="0" step="0.5" placeholder="N5,000" disabled><br><br>
             </form>
         </div>
     </div>
