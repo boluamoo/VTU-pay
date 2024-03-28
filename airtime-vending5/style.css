@@ -1,0 +1,39 @@
+.failed-card {
+    display: flex;
+    width: 43%;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 194px 0 24px;
+    border-radius: 30px;
+    gap: 275px;
+    position: relative;
+}
+
+.done-button {
+    background-color: #f55151;
+    height: 56px;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 15px;
+    color: white;
+    font-size: 25px;
+    font-weight: var(--bold);
+}
+
+.failed-card-top {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.failed-text {
+    font-size: 38px;
+    font-weight: var(--semi-bold);
+}
+
+.failed-description {
+    font-size: 18px;
+    font-weight: var(--medium);
+}
