@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="top-banner"></div>
+    <div class="auth-main">
+      <div class="auth-head">
+        Please, be sure that you're on http://oatek.net
+      </div>
+      <div class="auth-body">
+        <div class="sign-in">
+          <p class="sign-in-main-text">Sign In</p>
+          <p class="sign-in-sub-text">
+            To sign in, please type in the email address linked to your account.
+          </p>
+        </div>
+        <form action="" class="sign-in-form">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            name=""
+            id="email"
+            placeholder="example@gmail.com"
+          /><br /><br />
+          <div class="password">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name=""
+              id="password"
+              placeholder="*********"
+            />
+            <img
+              src="assets/open-eye.png"
+              alt=""
+              class="password-icon"
+              onclick="togglePasswordVisibility()"
+            />
+          </div>
+          <br /><br />
+          <p class="forgot">
+            Forgot Password? <a href="" class="bold link">Reset it</a>
+          </p>
+          <br /><br />
+          <button type="submit" class="sign-in-button">Sign in</button>
+        </form>
+        <p class="create-account">
+          If you don't have an account, click
+          <a href="" class="bold link">here</a> and create an account in a few
+          minutes.
+        </p>
+      </div>
+    </div>
+    <div class="background">
+      <img src="../data vending1/assets/vending-background.png" alt="" />
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

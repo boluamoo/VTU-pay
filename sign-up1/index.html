@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="top-banner"></div>
+    <div class="auth-main">
+      <div class="auth-head">
+        Please, be sure that you're on http://oatek.net
+      </div>
+      <div class="auth-body">
+        <div class="sign-in">
+          <div class="sign-in-main">
+            <p class="sign-in-main-text">SignUp to</p>
+            <p class="sign-in-sub-text">Double Check the Data Provided</p>
+          </div>
+          <div class="base">
+            <img src="../sign-in/assets/next.png" alt="" class="next-btn" />
+          </div>
+        </div>
+        <div class="auth-content">
+          <p class="create-account">
+            To sign in, please type in the email address linked to your loripay
+            account.
+          </p>
+          <form action="" class="sign-in-form">
+            <label for="email">User Name</label>
+            <input
+              type="email"
+              name=""
+              id="email"
+              placeholder="example@gmail.com"
+            /><br />
+            <div class="user-name">
+              <div>
+                <label for="firstname">First Name</label>
+                <input type="text" id="first-name" placeholder="given name" />
+              </div>
+              <br />
+              <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" id="last-name" placeholder="family name" />
+              </div>
+            </div>
+            <br />
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              name=""
+              id="phone"
+              placeholder="+234:    804 *** ****"
+            /><br />
+            <div class="password">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name=""
+                id="password"
+                placeholder="*********"
+              />
+              <img
+                src="../sign-in/assets/open-eye.png"
+                alt=""
+                class="password-icon"
+                onclick="togglePasswordVisibility()"
+              />
+            </div>
+            <br />
+            <div class="password">
+              <label for="cpassword">Confirm Password</label>
+              <input
+                type="password"
+                name=""
+                id="cpassword"
+                placeholder="*********"
+              />
+              <img
+                src="../sign-in/assets/open-eye.png"
+                alt=""
+                class="password-icon"
+                onclick="togglePasswordVisibility()"
+              />
+            </div>
+            <br />
+            <div class="base">
+              <div class="next">
+                <img src="../sign-in/assets/back.png" alt="" class="next-btn" />
+                <img src="../sign-in/assets/next.png" alt="" class="next-btn" />
+              </div>
+              <button type="submit" class="go-button">Let's Go</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="background">
+      <img src="../data vending1/assets/vending-background.png" alt="" />
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
