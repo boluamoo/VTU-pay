@@ -1,0 +1,12 @@
+.dashboard-main{
+    /* background-color: (249, 249, 249, 1); */
+    background-color: black;
+    position: relative;
+    margin-left: 16%;
+    width: 84%;
+}
+
+main {
+    height: 100%;
+
+}
