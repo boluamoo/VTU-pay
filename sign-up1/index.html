@@ -39,12 +39,12 @@
           <input type="email" name="" id="email" placeholder="example@gmail.com" /><br />
           <div class="user-name">
             <div>
-              <label for="firstname">First Name</label>
+              <label for="firstname">First Name</label><br><br>
               <input type="text" id="first-name" placeholder="given name" />
             </div>
             <br />
             <div>
-              <label for="lastname">Last Name</label>
+              <label for="lastname">Last Name</label><br><br>
               <input type="text" id="last-name" placeholder="family name" />
             </div>
           </div>
@@ -56,16 +56,24 @@
           </div> <br>
           <div class="password">
             <label for="password">Password</label>
-            <input type="password" name="" id="password" placeholder="*********" />
-            <img src="../sign-in/assets/open-eye.png" alt="" class="password-icon"
-              onclick="togglePasswordVisibility()" />
+            <div class="password-input">
+              <input type="password" name="" id="password" placeholder="*********" />
+              <div class="password-image">
+                <img src="../sign-in/assets/open-eye.png" alt="" class="password-icon"
+                  onclick="togglePasswordVisibility()" />
+              </div>
+            </div>
           </div>
           <br />
           <div class="password">
             <label for="cpassword">Confirm Password</label>
-            <input type="password" name="" id="cpassword" placeholder="*********" />
-            <img src="../sign-in/assets/open-eye.png" alt="" class="password-icon"
-              onclick="togglePasswordVisibility()" />
+            <div class="password-input">
+              <input type="password" name="" id="cpassword" placeholder="*********" />
+              <div class="password-image">
+                <img src="../sign-in/assets/open-eye.png" alt="" class="password-icon"
+                  onclick="togglePasswordVisibility()" />
+              </div>
+            </div>
           </div>
           <br />
           <div class="base">
