@@ -233,10 +233,6 @@ button {
   margin: 10px 0;
 }
 
-.country-code {
-  /* border-right: none; */
-}
-
 input[type="tel"] {
 
   border-radius: 5px;
