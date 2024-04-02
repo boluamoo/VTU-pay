@@ -25,7 +25,8 @@
     padding-right: 10px;
 }
 
-.background img {
+.dashboard .background img {
+    /* border: 1px solid black; */
   position: fixed;
   right: 0;
   top: 116.5px;
