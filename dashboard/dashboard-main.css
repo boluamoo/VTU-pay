@@ -21,6 +21,8 @@
     display: flex;
     flex-direction: column;
     margin-top: 116.5px;
+    padding-left: 5%;
+    padding-right: 10px;
 }
 
 .background img {
@@ -34,6 +36,9 @@
 
 .updates { 
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .verify-account {
@@ -42,9 +47,21 @@
 
 .success-register{
     display: flex;
+    align-items: center;
 }
 
 .success-register-img{
     width: 40px;
     height: 64px;
+    margin-right: 8px;
+}
+.success-register-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.success-register p {
+    font-weight: var(--bold);
+    color: rgba(152, 220, 135, 1);
 }
