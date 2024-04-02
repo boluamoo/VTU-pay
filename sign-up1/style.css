@@ -95,7 +95,7 @@ button {
 }
 
 .auth-head {
-    width: 38%;
+  width: 38%;
   padding-left: 16px;
   height: 61px;
   display: flex;
@@ -124,7 +124,7 @@ button {
 }
 
 .sign-in {
-    width: 43%;
+  width: 43%;
   display: flex;
   height: 10%;
   flex-direction: column;
@@ -136,8 +136,8 @@ button {
   color: rgba(0, 0, 0, 1);
 }
 
-.sign-in-main{
-    margin-bottom: 150px;
+.sign-in-main {
+  margin-bottom: 150px;
 }
 
 .sign-in-main-text {
@@ -171,10 +171,10 @@ button {
   color: rgba(194, 194, 194, 1);
 }
 
-.user-name{
-    display: flex;
-    align-items: center;
-    gap: 15px;
+.user-name {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .password {
@@ -196,22 +196,22 @@ button {
   color: rgba(0, 0, 0, 1);
 }
 
-.base{
-display: flex;
-flex-direction: column;
-align-items: flex-end;
+.base {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.next{
-    margin: 5px;
+.next {
+  margin: 5px;
 }
 
-.next-btn{
-border: 1px solid rgba(234, 234, 234, 1);
-padding: 8px;
-border-radius: 5px;
-cursor: pointer;
-margin: 2px;
+.next-btn {
+  border: 1px solid rgba(234, 234, 234, 1);
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 2px;
 }
 
 .go-button {
@@ -221,4 +221,38 @@ margin: 2px;
   border-radius: 14px;
   color: rgba(255, 255, 255, 1);
   width: 35%;
+}
+
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgba(248, 248, 248, 1);
+  padding: 0 10px;
+  margin: 10px 0;
+}
+
+.country-code {
+  /* border-right: none; */
+}
+
+input[type="tel"] {
+
+  border-radius: 5px;
+  /* padding: 18px; */
+  font-size: 15px;
+  border: none;
+  background-color: rgba(248, 248, 248, 1);
+  outline: none;
+  width: 100%;
+  margin: 0;
+
+
+  /* border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0 5px 5px 0; */
 }
