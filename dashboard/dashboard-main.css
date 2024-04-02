@@ -19,6 +19,7 @@
 }
 
 .dashboard-main section {
+    overflow-y: hidden;
 }
 
 .background img {
