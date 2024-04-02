@@ -35,7 +35,7 @@
 .sidebar-link a {
     font-family: var(--heading-font);
     color: white;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 400;
     line-height: 26.95px;
     text-align: left;
@@ -58,5 +58,5 @@
 
 .second-hr {
     margin: 5% auto;
-    width: 80%;
+    width: 85%;
 }
