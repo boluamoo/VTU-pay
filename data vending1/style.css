@@ -201,7 +201,6 @@ button {
     overflow-x: auto;
     white-space: nowrap;
     -ms-overflow-style: none;
-    scrollbar-width: none;
 }
 
 .offer-row::-webkit-scrollbar {
