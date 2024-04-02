@@ -2,12 +2,14 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px;
+    width: 16%;
     height: 100%;
     overflow-x: hidden;
     background-color: var(--blue);
 }
 
 .dashboard-logo-container {
+    height: 116.5px;
     padding: 37px;
+    border-bottom: 1px solid #303031;
 }
