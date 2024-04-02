@@ -2,6 +2,9 @@
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 16%;
     height: 100%;
     overflow-x: hidden;
@@ -11,14 +14,13 @@
 .dashboard-logo-container {
     height: 116.5px;
     padding: 12% 3%;
-    /* box-sizing: border-box; */
 }
 
 .sidebar-image-link {
     margin-left: 11%;
     display: flex;
     align-items: center;
-    height: 59px;
+    height: 50px;
     gap: 12px;
 }
 
@@ -34,7 +36,7 @@
 
 .sidebar-link a {
     color: white;
-    font-size: 1.375rem;
+    font-size: 16px;
     font-weight: 400;
     line-height: 26.95px;
     text-align: left;
@@ -58,4 +60,39 @@
 .second-hr {
     margin: 5% auto;
     width: 85%;
+}
+
+.dashboard-sidebar-bottom {
+    justify-self: flex-end;
+    color: white;
+}
+
+.sidebar-profile,
+.account-type-select {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-profile {
+    margin: 40px 0 40px 30px;
+    gap: 12px;
+}
+
+.account-type-change {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-type-select {
+    gap: 12px;
+}
+
+.account-type-select img {
+    width: 12px;
+    height: 7.4px;
+    cursor: pointer;
+}
+
+.account-type {
+    color: #DEDEDE;
 }
