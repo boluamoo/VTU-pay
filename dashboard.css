@@ -460,7 +460,7 @@ th {
 }
 
 .table-heading {
-    margin-top: 70px;
+    padding-top: 70px;
     margin-bottom: 19px;
     font-size: 28px;
     font-weight: var(--bold);
