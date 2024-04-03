@@ -44,7 +44,7 @@ body {
     width: 100%;
 }
 
-.one-body{
+.one-body {
     background-color: rgb(249, 249, 249, 1);
 
 }
@@ -706,7 +706,7 @@ hr {
     font-size: 35px;
 }
 
-.buy-airtime {
+.dashboard-buy-airtime {
     width: 25%;
     height: 100%;
     padding: 20px;
@@ -1067,10 +1067,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 .done-button {
     background-color: #f55151;
+    width: 100%;
     height: 56px;
     cursor: pointer;
     width: 80%;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.done-button button {
     color: white;
     font-size: 25px;
     font-weight: var(--bold);
@@ -1550,11 +1556,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 .sign-inbutton {
     background-color: rgba(245, 81, 81, 1);
-    font-size: 18px;
     padding: 10px;
     border-radius: 15px;
-    color: rgba(255, 255, 255, 1);
     width: 35%;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-inbutton button {
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
 }
 
 /* SIGN_UP1 */
@@ -1564,9 +1575,9 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 46px;
     gap: 14px;
     width: 65%;
-  }
-  
-  .sign-up-head {
+}
+
+.sign-up-head {
     width: 38%;
     padding-left: 16px;
     height: 61px;
@@ -1577,14 +1588,14 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 10px;
     font-weight: var(--semi-bold);
     font-size: 20px;
-  }
-  
-  .sign-up-body {
+}
+
+.sign-up-body {
     display: flex;
     gap: 10%;
-  }
-  
-  .auth-content {
+}
+
+.auth-content {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -1593,9 +1604,9 @@ input[type=number]::-webkit-outer-spin-button {
     border: 1px solid rgba(234, 234, 234, 1);
     background-color: white;
     border-radius: 20px;
-  }
+}
 
-  .sign-in-one {
+.sign-in-one {
     width: 43%;
     display: flex;
     height: 10%;
@@ -1606,20 +1617,20 @@ input[type=number]::-webkit-outer-spin-button {
     gap: 10px;
     border: 1px solid rgba(234, 234, 234, 1);
     color: rgba(0, 0, 0, 1);
-  }
+}
 
-  .sign-in-main-one {
+.sign-in-main-one {
     margin-bottom: 150px;
-  }
-  
-  .sign-in-main-text-one {
+}
+
+.sign-in-main-text-one {
     color: rgba(245, 81, 81, 1);
     font-size: 28px;
     font-weight: var(--black);
     margin-bottom: 20px;
-  }
+}
 
-  .sign-in-form input {
+.sign-in-form input {
     border-radius: 5px;
     padding: 18px;
     font-size: 15px;
@@ -1628,28 +1639,28 @@ input[type=number]::-webkit-outer-spin-button {
     outline: none;
     width: 100%;
     margin: 10px 0;
-  }
+}
 
-  .user-name {
+.user-name {
     display: flex;
     align-items: center;
     gap: 15px;
-  }
+}
 
-  input[type="password"] {
+input[type="password"] {
     margin: 0;
-  }
-  
-  input[type="text"] {
-    margin: 0;
-  }
+}
 
-  .password-input {
+input[type="text"] {
+    margin: 0;
+}
+
+.password-input {
     padding: 10px 0;
     position: relative;
-  }
-  
-  .password-image {
+}
+
+.password-image {
     position: absolute;
     bottom: 0%;
     transform: translateY(-20px);
@@ -1659,53 +1670,53 @@ input[type=number]::-webkit-outer-spin-button {
     cursor: pointer;
     width: 30px;
     height: 31px;
-  }
-  
-  .base {
+}
+
+.base {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-  }
-  
-  .next-one {
+}
+
+.next-one {
     margin: 5px;
-  }
-  
-  .next-btn-one {
+}
+
+.next-btn-one {
     border: 1px solid rgba(234, 234, 234, 1);
     padding: 8px;
     border-radius: 5px;
     cursor: pointer;
     margin: 2px;
-  }
+}
 
-  .go-button {
+.go-button {
     background-color: rgba(245, 81, 81, 1);
     font-size: 18px;
     padding: 12px;
     border-radius: 14px;
     color: rgba(255, 255, 255, 1);
     width: 35%;
-  }
+}
 
-  .phone-input {
+.phone-input {
     display: flex;
     align-items: center;
     border-radius: 5px;
     background-color: rgba(248, 248, 248, 1);
     padding: 0 10px;
     margin: 10px 0;
-  }
+}
 
-  input[type="tel"] {
+input[type="tel"] {
     border-radius: 5px;
-    font-size: 15px;
+    /* font-size: 15px; */
     border: none;
     background-color: rgba(248, 248, 248, 1);
     outline: none;
     width: 100%;
     margin: 0;
-  }
+}
 
 
 /* SIGN_UP2 */
