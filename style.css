@@ -751,7 +751,7 @@ hr {
     cursor: pointer;
 }
 
-.buy-data {
+.dashboard-buy-data {
     width: 25%;
     height: 100%;
     padding: 20px;
@@ -1833,7 +1833,7 @@ input[type="tel"] {
 }
 
 
-.wallet-airtime-back-button {
+.wallet-back-button {
     position: absolute;
     top: 52px;
     left: 70px;
