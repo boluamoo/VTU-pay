@@ -166,7 +166,7 @@
 .dashboard-main section {
     position: relative;
     z-index: 10;
-    height: 100vh;
+    /* height: 100vh; */
     overflow-y: auto;
     display: flex;
     flex-direction: column;
@@ -235,7 +235,7 @@
     display: flex;
     width: 100%;
     gap: 8%;
-    margin: 10px;
+    margin: 10px 0 10px;
     align-items: center;
 }
 
@@ -272,7 +272,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2%;
-    margin: 10px 10px 20px 10px;
+    margin: 10px 10px 20px 0px;
     width: 100%;
     height: 265px;
 }
@@ -388,7 +388,7 @@
 .content-referral {
     display: flex;
     gap: 2%;
-    margin: 10px;
+    margin: 10px 0 10px;
     width: 100%;
     height: 205px;
 }
@@ -421,4 +421,66 @@
 .earning-naira {
     color: rgba(45, 102, 168, 1);
     margin: 5px 0;
+}
+
+
+.dashboard-table {
+    width: 100%;
+    background-color: #E2ECF7;
+    border: 1px solid #EAEAEA;
+    border-radius: 10px;
+}
+
+.dashboard-table table {
+    width: 100%;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.transaction-table {
+    position: relative;
+}
+
+.dashboard-networks {
+    transform: translateY(-60%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+th {
+    border-bottom: 1px solid #CFCFCF;
+    font-size: 20px;
+    font-weight: var(--bold);
+    line-height: 24px;
+}
+
+.table-heading {
+    margin-top: 70px;
+    margin-bottom: 19px;
+    font-size: 28px;
+    font-weight: var(--bold);
+    line-height: 34.66px;
+    text-align: left;
+    color: #585858;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    gap: 26px;
+    margin-top: 35px;
+    text-align: right;
+    color: #4F4F4F;
+    font-size: 20px;
+    font-weight: var(--bold);
+    line-height: 24px;
+}
+
+.dashboard button {
+    cursor: pointer;
 }

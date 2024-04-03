@@ -162,12 +162,182 @@
                         </div>
                     </div>
                 </div>
+                <div class="transaction-table">
+                    <div class="networks dashboard-networks">
+                        <img src="assets/9mobile 1.png" alt="" class="n-mobile">
+                        <img src="assets/Airtel 3.png" alt="" class="airtel"><br>
+                        <img src="assets/Glo 1.png" alt="" class="glo">
+                        <img src="assets/MTN 2.png" alt="" class="mtn">
+                    </div>
+                    <div class="table-heading">Recent Transactions</div>
+                    <div class="dashboard-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SN</th>
+                                    <th>Type</th>
+                                    <th>Reference</th>
+                                    <th>Network</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Type 1</td>
+                                    <td>Reference 1</td>
+                                    <td>Network 1</td>
+                                    <td>Amount 1</td>
+                                    <td>Date 1</td>
+                                    <td>Status 1</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Type 2</td>
+                                    <td>Reference 2</td>
+                                    <td>Network 2</td>
+                                    <td>Amount 2</td>
+                                    <td>Date 2</td>
+                                    <td>Status 2</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Type 3</td>
+                                    <td>Reference 3</td>
+                                    <td>Network 3</td>
+                                    <td>Amount 3</td>
+                                    <td>Date 3</td>
+                                    <td>Status 3</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Type 4</td>
+                                    <td>Reference 4</td>
+                                    <td>Network 4</td>
+                                    <td>Amount 4</td>
+                                    <td>Date 4</td>
+                                    <td>Status 4</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Type 5</td>
+                                    <td>Reference 5</td>
+                                    <td>Network 5</td>
+                                    <td>Amount 5</td>
+                                    <td>Date 5</td>
+                                    <td>Status 5</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Type 6</td>
+                                    <td>Reference 6</td>
+                                    <td>Network 6</td>
+                                    <td>Amount 6</td>
+                                    <td>Date 6</td>
+                                    <td>Status 6</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Type 7</td>
+                                    <td>Reference 7</td>
+                                    <td>Network 7</td>
+                                    <td>Amount 7</td>
+                                    <td>Date 7</td>
+                                    <td>Status 7</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Type 8</td>
+                                    <td>Reference 8</td>
+                                    <td>Network 8</td>
+                                    <td>Amount 8</td>
+                                    <td>Date 8</td>
+                                    <td>Status 8</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Type 9</td>
+                                    <td>Reference 9</td>
+                                    <td>Network 9</td>
+                                    <td>Amount 9</td>
+                                    <td>Date 9</td>
+                                    <td>Status 9</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Type 10</td>
+                                    <td>Reference 10</td>
+                                    <td>Network 10</td>
+                                    <td>Amount 10</td>
+                                    <td>Date 10</td>
+                                    <td>Status 10</td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Type 11</td>
+                                    <td>Reference 11</td>
+                                    <td>Network 11</td>
+                                    <td>Amount 11</td>
+                                    <td>Date 11</td>
+                                    <td>Status 11</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="pagination">
+                            <div>
+                                Rows per page: <span style="color: black">10</span>
+                            </div>
+                            <button onclick="prevPage()"><img src="assets/prev.png" alt=""></button>
+                            <button onclick="nextPage()"><img src="assets/dashboard-next.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </div>
         <div class="background">
             <img src="assets/dashboard-back.png" alt="" />
         </div>
     </main>
+
+
+    <script>
+        let currentPage = 0;
+        const rowsPerPage = 10;
+        const totalRows = document.querySelector('table tbody').rows.length;
+
+        function showPage(page) {
+            const rows = document.querySelectorAll('table tbody tr');
+            const startIndex = page * rowsPerPage;
+            const endIndex = startIndex + rowsPerPage;
+
+            rows.forEach((row, index) => {
+                if (index >= startIndex && index < endIndex) {
+                    row.style.display = 'table-row';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+
+        function nextPage() {
+            if (currentPage < Math.ceil(totalRows / rowsPerPage) - 1) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 0) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
+
+        showPage(currentPage);
+    </script>
 </body>
 
 </html>
