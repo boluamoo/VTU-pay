@@ -37,6 +37,7 @@
 a {
     text-decoration: none;
     font-family: inherit;
+    color: inherit;
 }
 
 body {
@@ -1072,11 +1073,6 @@ input[type=number]::-webkit-outer-spin-button {
     cursor: pointer;
     width: 80%;
     border-radius: 15px;
-    display: flex;
-    justify-content: center;
-}
-
-.done-button button {
     color: white;
     font-size: 25px;
     font-weight: var(--bold);
@@ -1561,12 +1557,10 @@ input[type=number]::-webkit-outer-spin-button {
     width: 35%;
     display: flex;
     justify-content: center;
-}
-
-.sign-inbutton button {
     color: rgba(255, 255, 255, 1);
     font-size: 18px;
 }
+
 
 /* SIGN_UP1 */
 .sign-up-main {
@@ -1692,11 +1686,13 @@ input[type="text"] {
 
 .go-button {
     background-color: rgba(245, 81, 81, 1);
-    font-size: 18px;
     padding: 12px;
     border-radius: 14px;
-    color: rgba(255, 255, 255, 1);
     width: 35%;
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
 }
 
 .phone-input {
