@@ -146,6 +146,33 @@
     margin-bottom: 50px;
   }
 
+  .testimonial-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .testimonial-col {
+    width: 95%;
+    margin: auto;
+  }
+
+  .testimonial {
+    gap: 20px;
+    padding: 16px 16px 16px 60px;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.position {
+  font-size: 12px;
+}
+
+.testimonial-content {
+  font-size: 14px;
+}
+
   /* CONTACT */
   .contact-us-main {
     padding-top: 10px;
