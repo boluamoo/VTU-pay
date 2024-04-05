@@ -921,7 +921,6 @@ button {
 .purchase-option {
     display: flex;
     align-self: center;
-    flex-wrap: wrap;
     gap: 13px;
     color: #848484;
 }
