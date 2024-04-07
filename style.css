@@ -2015,3 +2015,721 @@ input[type="tel"] {
     font-size: 16px;
     font-weight: var(--bold);
 }
+
+/* MOBILE */
+@media (max-width: 900px) {
+
+    /* LANDING */
+    .section-one {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .section-one-left {
+        flex: 1;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .section-one-heading {
+        line-height: 51px;
+        font-size: 34px;
+        letter-spacing: 0px;
+    }
+
+    .section-one-p {
+        line-height: 27px;
+        font-size: 18px;
+    }
+
+    .section-one-buttons {
+        justify-content: space-evenly;
+        line-height: 12px;
+        font-size: 21px;
+    }
+
+    .section-one-right {
+        flex: 1;
+        align-self: center;
+    }
+
+    .section-one-right img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .section-two-heading {
+        font-size: 66px;
+        line-height: 72px;
+        margin-bottom: 24px;
+    }
+
+    .section-two p {
+        font-size: 23px;
+        line-height: 24px;
+    }
+
+    .section-two-flex {
+        display: flex;
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section-two-left {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .section-two-card-heading {
+        margin-bottom: 16px;
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .section-two-card-p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .section-two-right {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-three {
+        flex-direction: column;
+        gap: 7%;
+        padding: 5%;
+        height: auto;
+    }
+
+    .section-three-right {
+        width: 100%;
+    }
+
+    .section-three-heading {
+        font-size: 67px;
+        line-height: 72px;
+        margin-bottom: 24px;
+    }
+
+    .section-four {
+        padding: 5% 5% 15%;
+    }
+
+    .section-four-text {
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    .section-four-heading {
+        font-size: 66px;
+        line-height: 72px;
+    }
+
+    .section-four-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section-four-card {
+        width: 90%;
+        margin: auto;
+        padding: 40px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .section-four-card-heading {
+        line-height: 32px;
+        font-size: 28px;
+    }
+
+    .section-four-card-text {
+        gap: 16px;
+    }
+
+    .section-five {
+        padding: 5%;
+    }
+
+    .section-five .section-four-heading {
+        margin-bottom: 50px;
+    }
+
+    .testimonial-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .testimonial-col {
+        width: 95%;
+        margin: auto;
+    }
+
+    .testimonial {
+        gap: 20px;
+        padding: 16px 16px 16px 60px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .position {
+        font-size: 12px;
+    }
+
+    .testimonial-content {
+        font-size: 14px;
+    }
+
+    /* CONTACT */
+    .contact-us-main {
+        padding-top: 10px;
+        gap: 50px;
+    }
+
+    .contact-us {
+        width: 70%;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    /* SIGN-UP1 */
+
+    .sign-up-main {
+        width: 95%;
+        margin: auto;
+        padding: 50px 0 0;
+    }
+
+    .sign-up-head {
+        width: 100%;
+    }
+
+    .sign-up-body {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    .sign-in-one {
+        width: 100%;
+        display: flex;
+        height: 10%;
+        border-radius: 20px;
+        padding: 20px;
+        gap: 5px;
+    }
+
+    .sign-in-main-one {
+        margin-bottom: 0px;
+    }
+
+    .sign-in-main-text-one {
+        font-size: 28px;
+        font-weight: var(--black);
+        margin-bottom: 20px;
+    }
+
+    .user-name {
+        display: block;
+        gap: 15px;
+    }
+
+    input[type="password"] {
+        margin: 0;
+    }
+
+    input[type="text"] {
+        margin: 0;
+    }
+
+    .password-input {
+        padding: 10px 0;
+        position: relative;
+    }
+
+    .password-image {
+        position: absolute;
+        bottom: 0%;
+        transform: translateY(-20px);
+        right: 5%;
+        /* width: 100%;
+          height: 100%; */
+        cursor: pointer;
+        width: 30px;
+        height: 31px;
+    }
+
+    .base {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .next-one {
+        margin: 5px;
+    }
+
+    .next-btn-one {
+        border: 1px solid rgba(234, 234, 234, 1);
+        padding: 8px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 2px;
+    }
+
+    .go-button {
+        background-color: rgba(245, 81, 81, 1);
+        padding: 12px;
+        border-radius: 14px;
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        color: rgba(255, 255, 255, 1);
+        font-size: 18px;
+    }
+
+    .phone-input {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        background-color: rgba(248, 248, 248, 1);
+        padding: 0 10px;
+        margin: 10px 0;
+    }
+
+    input[type="tel"] {
+        border-radius: 5px;
+        /* font-size: 15px; */
+        border: none;
+        background-color: rgba(248, 248, 248, 1);
+        outline: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    /* SIGN_UP2 */
+
+    .sign-up2 {
+        gap: 128px;
+    }
+
+    .sign-up2-left {
+        width: 50%;
+    }
+
+    .sign-up2-right h1 {
+        font-size: 32px;
+    }
+
+    .otp-head {
+        font-size: 18px;
+    }
+
+    .otp-body {
+        gap: 18px;
+        padding: 20px 20px 20px 20px;
+        border-radius: 20px;
+    }
+
+    .confirm {
+        font-weight: var(--black);
+        font-size: 30px;
+    }
+
+    .otp-phone {
+        color: #101010;
+    }
+
+    .otp-input {
+        display: flex;
+        gap: 14px;
+    }
+
+    .otp-digit {
+        outline: none;
+        width: 52px;
+        height: 55px;
+        text-align: center;
+        background-color: #f8f8f8;
+        color: #aeaeae;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .resending {
+        color: #474646;
+    }
+
+    .submit-pin {
+        transform: translateX(0%);
+        width: 50%;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    /* WALLET */
+    .main-wallet-heading {
+        font-size: 19px;
+    }
+
+    .wallet-back-button {
+        width: 20px;
+        height: 20px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .wallet-back-button img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .wallet-dashboard {
+        border-radius: 16px;
+        width: 90%;
+        padding: 5%;
+        gap: 15px;
+    }
+
+    .wallet-dashboard2 {
+        box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.1);
+        padding: 5% 5% 100px;
+        border-radius: 16px;
+    }
+
+    .naira-card {
+        padding: 0;
+    }
+
+    .add-button {
+        padding: 12px;
+        display: inline;
+        background-color: #f55151;
+        cursor: pointer;
+        border-radius: 15px;
+        color: white;
+        font-size: 14px;
+        font-weight: var(--bold);
+    }
+
+    /* SIGN IN */
+    .auth-main {
+        padding: 0;
+        gap: 14px;
+        width: 90%;
+        margin: 30px auto 0;
+    }
+
+    .auth-body {
+        /* padding: 46px 78px; */
+        padding: 10%;
+    }
+
+    .sign-in {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* OTP */
+
+    .otp-main {
+        /* padding: 46px 0 0 51px; */
+        padding: 0%;
+        gap: 14px;
+        width: 90%;
+        margin: 30px auto 0;
+    }
+
+    .otp-body {
+        gap: 18px;
+        /* padding: 46px 0 46px 69px; */
+        padding: 10%;
+    }
+
+    .confirm {
+        font-size: 20px;
+    }
+
+    .otp-input {
+        gap: 5px;
+    }
+
+    .otp-digit {
+        outline: none;
+        width: 10%;
+        height: 50px;
+    }
+
+    .otp-sign-in {
+        width: 50%;
+    }
+}
+
+@media (max-width: 350px) {
+
+    /* SIGN_UP1 */
+    .auth-content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    /* CONTACT */
+    .contact-us-main {
+        padding-top: 10px;
+
+        gap: 26px;
+    }
+
+    .contact-us {
+        width: 82%;
+    }
+
+    .head {
+        font-size: 40px;
+        line-height: 35px;
+        padding: 5px;
+        padding-bottom: 10px;
+    }
+
+    .head span {
+        margin-left: 5px;
+    }
+
+    .sub {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .contact-form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contact-form input {
+        border-radius: 20px;
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    .send {
+        border-radius: 20px;
+        font-size: 12px;
+        padding: 14px;
+    }
+
+    /* SIGN_UP2 */
+    .sign-up2 {
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .sign-up2-left {
+        display: flex;
+        flex-direction: column;
+        /* padding: 46px 0 0 51px; */
+        padding: 0;
+        gap: 14px;
+        width: 80%;
+        margin: auto;
+    }
+
+    .sign-up2-right h1 {
+        color: #23a42b;
+        font-weight: var(--semi-bold);
+        font-size: 45px;
+    }
+
+    .otp-head {
+        width: 100%;
+    }
+
+    .otp-body {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        /* padding: 46px 0 46px 69px; */
+        padding: 10%;
+        color: black;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    /* OTP */
+
+    .otp-digit {
+        outline: none;
+        width: 20%;
+        height: 50px;
+    }
+
+    @media (max-width: 900px) {
+        /* DATA-VENDING1 */
+
+        .data-vending1-main {
+            /* width: 43%; */
+            padding: 0 5%;
+            padding-top: 39px;
+        }
+
+        .vending-intro {
+            margin-bottom: 44px;
+
+            padding: 52px 16px;
+        }
+
+        .intro-text {
+            width: 70%;
+        }
+
+        /* DATA-VENDING2 */
+        .purchase-option {
+            width: 100%;
+            gap: 8px;
+        }
+
+        .purchase-option button {
+            border-radius: 15px;
+            height: 56px;
+            margin: auto;
+            width: 18%;
+        }
+
+        .purchase-dashboard {
+            width: 63%;
+
+            padding: 12px 40px 100px;
+            border-radius: 30px;
+            gap: 20px;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .data-vending1-main {
+            padding: 5px;
+            padding-top: 10px;
+        }
+
+        .vending-intro {
+            margin-bottom: 12px;
+
+            padding: 20px;
+        }
+
+        .purchase-option {
+            width: 100%;
+        }
+
+        .data-vending1-purchase-dashboard {
+            padding: 11px 30px;
+            gap: 20px;
+        }
+
+        .purchase-option button {
+            border-radius: 15px;
+            height: 46px;
+            width: 50%;
+        }
+
+        .offer-row {
+            gap: 16px;
+
+            padding: 10px 25px;
+        }
+
+        .offer-col {
+            padding: 12px 18px;
+            gap: 20px;
+        }
+
+        .offer-details {
+            font-size: 16px;
+        }
+
+        .current-price {
+            font-size: 16px;
+        }
+
+        .intro-text {
+            width: 70%;
+        }
+
+        .plans-head {
+            font-size: 15px;
+            gap: 10%;
+        }
+
+        .plans-row {
+            gap: 32px;
+        }
+
+        .plans-col {
+            padding: 10px 20px;
+            gap: 15px;
+        }
+
+        /* }DATA-VENDING2 */
+        .purchase-option {
+            width: 100%;
+            gap: 5px;
+        }
+
+        .purchase-option button {
+            border-radius: 12px;
+            height: 46px;
+            margin: auto;
+            width: 19%;
+        }
+
+        .purchase-dashboard {
+            width: 95%;
+
+            padding: 8px 20px 70px;
+            border-radius: 15px;
+            gap: 10px;
+        }
+
+        .airtime-form input,
+        .airtime-form select {
+            height: 45px;
+            font-size: 16px;
+            padding: 4px 15px;
+            border-radius: 8px;
+        }
+
+        .airtime-form label {
+            font-size: 12px;
+        }
+
+        .airtime-back-button img {
+            width: 10px;
+        }
+
+        .next-button {
+            height: 46px;
+            width: 48%;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+    }
+
+}
