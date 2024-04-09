@@ -1168,6 +1168,9 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 15px;
     color: white;
     font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: var(--bold);
 }
 
@@ -1545,13 +1548,15 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .otp-sign-in {
-    display: inline;
     width: 147px;
     height: 56px;
     color: black;
     font-weight: var(--bold);
     font-size: 25px;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     outline: none;
     background-color: var(--red-text);
@@ -1899,6 +1904,9 @@ input[type="tel"] {
 }
 
 .submit-pin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 40px;
     transform: translateX(100%);
     position: relative;
