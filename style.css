@@ -482,6 +482,90 @@ hr {
     border-radius: 16px;
 }
 
+footer {
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5% 5% 96px;
+    gap: 2rem;
+    position: relative;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 11px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.26px;
+    text-align: left;
+}
+
+.footer-col {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+    min-width: 250px;
+}
+
+.footer-col h1 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: left;
+}
+
+.footer-col .small-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+}
+
+.footer-col h6 {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+}
+
+.footer-col2-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-col3-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-col3-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.footer-col3-row img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 32px;
+}
+
+.footer-socials img {
+    cursor: pointer;
+}
+
 /* DASHBOARD */
 .dashboard-sidebar {
     position: fixed;
@@ -2200,6 +2284,12 @@ input[type="tel"] {
     .testimonial {
         gap: 20px;
         padding: 16px 16px 16px 60px;
+    }
+
+    .testimonial-pic {
+        transform: translateX(-30%);
+        width: 60px;
+        height: 60px;
     }
 
     .name {
