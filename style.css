@@ -2594,6 +2594,46 @@ input[type="tel"] {
     .otp-sign-in {
         width: 50%;
     }
+
+    /* AIRTIME VENDING4 */
+    .successful-card,
+    .failed-card {
+        width: 80%;
+        padding: 20px 0;
+        gap: 200px;
+    }
+
+    .successful-image,
+    .failed-image {
+        width: 80px;
+        height: 80px;
+        margin: auto;
+    }
+
+    .successful-image img,
+    .failed-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .successful-text {
+        font-size: 22px;
+    }
+
+    .successful-description {
+        font-size: 18px;
+    }
+
+    .successful-text,
+    .successful-description {
+        width: 90%;
+        margin: auto;
+    }
+
+    .failed-card .airtime-back-button {
+        left: 5%;
+    }
 }
 
 @media (max-width: 350px) {
@@ -2725,7 +2765,7 @@ input[type="tel"] {
             border-radius: 15px;
             height: 56px;
             margin: auto;
-            width: 18%;
+            width: 80%;
         }
 
         .purchase-dashboard {
@@ -2751,6 +2791,8 @@ input[type="tel"] {
 
         .purchase-option {
             width: 100%;
+            flex-direction: column;
+            gap: 20px;
         }
 
         .data-vending1-purchase-dashboard {
@@ -2761,7 +2803,7 @@ input[type="tel"] {
         .purchase-option button {
             border-radius: 15px;
             height: 46px;
-            width: 50%;
+            width: 80%;
         }
 
         .offer-row {
@@ -2811,7 +2853,6 @@ input[type="tel"] {
             border-radius: 12px;
             height: 46px;
             margin: auto;
-            width: 19%;
         }
 
         .purchase-dashboard {
