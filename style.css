@@ -566,6 +566,47 @@ footer {
     cursor: pointer;
 }
 
+/* LANDING 2 */
+.landing-2 {
+    background: url('assets/landing-2-background.png');
+}
+
+.landing-2 .section-one-heading {
+    color: white;
+}
+
+.landing-2 .get-started {
+    background-color: #2D66A8;
+}
+
+.landing-2 .sign-in-button {
+    color: var(--light-red);
+    background-color: #D0E2F8;
+}
+
+.landing-2 .nav-right {
+    display: flex;
+    gap: 10px;
+}
+
+.landing-2 .nav-links {
+    display: flex;
+    width: 365px;
+    justify-content: space-between;
+}
+
+.landing-2 .nav-links a {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.landing-2 .nav-links img {
+    object-fit: contain;
+    cursor: pointer;
+}
+
 /* DASHBOARD */
 .dashboard-sidebar {
     position: fixed;
