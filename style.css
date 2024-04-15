@@ -573,6 +573,11 @@ footer {
 
 .landing-2 .section-one-heading {
     color: white;
+    line-height: 62px;
+    font-weight: var(--extra-bold);
+    font-size: 50px;
+    letter-spacing: 0px;
+    font-family: var(--heading-font);
 }
 
 .landing-2 .get-started {
