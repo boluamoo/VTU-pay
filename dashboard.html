@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <aside class="dashboard-sidebar" id="sidebar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="mobile-sidebar">
+    <div class="dashboard-sidebar" id="sidebar">
       <div class="dashboard-logo-container">
         <div class="dashboard-logo">
           <a href="index.html">
@@ -90,304 +91,305 @@
           </div>
         </div>
       </div>
-    </aside>
-    <main class="dashboard">
-      <div class="dashboard-main">
-        <header>
-          <div class="hide-sidebar">
-            <button onclick="hideSide()" id="hide-button">Hide</button>
-            <button onclick="showSide()" id="show-button">Show</button>
+    </div>
+  </div>
+  <main class="dashboard">
+    <div class="dashboard-main">
+      <header>
+        <div class="hide-sidebar">
+          <button onclick="hideSide()" id="hide-button">Hide</button>
+          <button onclick="showSide()" id="show-button">Show</button>
+        </div>
+        <div class="search-bar">
+          <img src="assets/search.png" alt="Search Icon" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </header>
+      <section>
+        <div class="updates">
+          <div class="verify-account">
+            <p>You are yet to complete your account verification.</p>
+            <a href="">VERIFY</a>
           </div>
-          <div class="search-bar">
-            <img src="assets/search.png" alt="Search Icon" />
-            <input type="text" placeholder="Search" />
-          </div>
-        </header>
-        <section>
-          <div class="updates">
-            <div class="verify-account">
-              <p>You are yet to complete your account verification.</p>
-              <a href="">VERIFY</a>
+          <div class="success-register">
+            <div class="success-register-img">
+              <img src="assets/successful.png" alt="" />
             </div>
-            <div class="success-register">
-              <div class="success-register-img">
-                <img src="assets/successful.png" alt="" />
+            <p>User successfully registered!</p>
+          </div>
+        </div>
+        <div class="dashboard-content">
+          <div class="content-label">
+            <p>Dashboard</p>
+            <div class="add-money">
+              <div class="add-logo">
+                <img src="assets/add-money.png" alt="" />
               </div>
-              <p>User successfully registered!</p>
+              <p>Add Money</p>
             </div>
           </div>
-          <div class="dashboard-content">
-            <div class="content-label">
-              <p>Dashboard</p>
-              <div class="add-money">
-                <div class="add-logo">
-                  <img src="assets/add-money.png" alt="" />
+          <div class="content-main">
+            <div class="welcome-balance">
+              <div class="welcome-name">
+                <p>Welcome John</p>
+                <div class="welcome-card">
+                  <img src="assets/welcome-card.png" alt="" />
                 </div>
-                <p>Add Money</p>
+              </div>
+              <div class="welcome-balance-amount">
+                <p>Balance</p>
+                <p class="bold">₦ 10,000.00</p>
               </div>
             </div>
-            <div class="content-main">
-              <div class="welcome-balance">
-                <div class="welcome-name">
-                  <p>Welcome John</p>
-                  <div class="welcome-card">
-                    <img src="assets/welcome-card.png" alt="" />
+            <div class="dashboard-buy-airtime">
+              <div class="airtime-phone">
+                <img src="assets/airtime-phone.png" alt="" />
+              </div>
+              <div class="airtime-base-text">
+                <p class="bold red">
+                  Buy <br />
+                  Airtime
+                </p>
+                <a href="airtime-vending.html">
+                  <div class="next">
+                    <img src="assets/next.png" alt="" class="next-btn" />
                   </div>
-                </div>
-                <div class="welcome-balance-amount">
-                  <p>Balance</p>
-                  <p class="bold">₦ 10,000.00</p>
-                </div>
+                </a>
               </div>
-              <div class="dashboard-buy-airtime">
-                <div class="airtime-phone">
-                  <img src="assets/airtime-phone.png" alt="" />
-                </div>
-                <div class="airtime-base-text">
-                  <p class="bold red">
-                    Buy <br />
-                    Airtime
-                  </p>
-                  <a href="airtime-vending.html">
-                    <div class="next">
-                      <img src="assets/next.png" alt="" class="next-btn" />
-                    </div>
+            </div>
+            <div class="dashboard-buy-data">
+              <div class="data-phone">
+                <img src="assets/data-phone.png" alt="" />
+              </div>
+              <div class="airtime-base-text">
+                <p class="bold blue">
+                  Buy <br />
+                  Data
+                </p>
+                <div class="next">
+                  <a href="data-vending1.html">
+                    <img src="assets/next.png" alt="" class="next-btn" />
                   </a>
                 </div>
               </div>
-              <div class="dashboard-buy-data">
-                <div class="data-phone">
-                  <img src="assets/data-phone.png" alt="" />
-                </div>
-                <div class="airtime-base-text">
-                  <p class="bold blue">
-                    Buy <br />
-                    Data
-                  </p>
-                  <div class="next">
-                    <a href="data-vending1.html">
-                      <img src="assets/next.png" alt="" class="next-btn" />
-                    </a>
-                  </div>
-                </div>
-              </div>
             </div>
-            <div class="content-referral">
-              <div class="referral-earnings">
-                <div class="referral-code">
-                  <p>REFERRAL CODE</p>
-                  <p class="my-code bold">CWIHD</p>
-                </div>
-                <div class="my-ref-earnings">
-                  <p>EARNINGS</p>
-                  <p class="earning-naira bold">₦0.00</p>
-                </div>
+          </div>
+          <div class="content-referral">
+            <div class="referral-earnings">
+              <div class="referral-code">
+                <p>REFERRAL CODE</p>
+                <p class="my-code bold">CWIHD</p>
+              </div>
+              <div class="my-ref-earnings">
+                <p>EARNINGS</p>
+                <p class="earning-naira bold">₦0.00</p>
               </div>
             </div>
           </div>
-          <div class="transaction-table" id="transaction-table">
-            <div class="networks dashboard-networks">
-              <img src="assets/9mobile 1.png" alt="" class="n-mobile" />
-              <img src="assets/Airtel 3.png" alt="" class="airtel" /><br />
-              <img src="assets/Glo 1.png" alt="" class="glo" />
-              <img src="assets/MTN 2.png" alt="" class="mtn" />
-            </div>
-            <div class="table-heading">Recent Transactions</div>
-            <div class="dashboard-table">
-              <table>
-                <thead>
-                  <tr>
-                    <th>SN</th>
-                    <th>Type</th>
-                    <th>Reference</th>
-                    <th>Network</th>
-                    <th>Amount</th>
-                    <th>Date</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Type 1</td>
-                    <td>Reference 1</td>
-                    <td>Network 1</td>
-                    <td>Amount 1</td>
-                    <td>Date 1</td>
-                    <td>Status 1</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>Type 2</td>
-                    <td>Reference 2</td>
-                    <td>Network 2</td>
-                    <td>Amount 2</td>
-                    <td>Date 2</td>
-                    <td>Status 2</td>
-                  </tr>
-                  <tr>
-                    <td>3</td>
-                    <td>Type 3</td>
-                    <td>Reference 3</td>
-                    <td>Network 3</td>
-                    <td>Amount 3</td>
-                    <td>Date 3</td>
-                    <td>Status 3</td>
-                  </tr>
-                  <tr>
-                    <td>4</td>
-                    <td>Type 4</td>
-                    <td>Reference 4</td>
-                    <td>Network 4</td>
-                    <td>Amount 4</td>
-                    <td>Date 4</td>
-                    <td>Status 4</td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Type 5</td>
-                    <td>Reference 5</td>
-                    <td>Network 5</td>
-                    <td>Amount 5</td>
-                    <td>Date 5</td>
-                    <td>Status 5</td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>Type 6</td>
-                    <td>Reference 6</td>
-                    <td>Network 6</td>
-                    <td>Amount 6</td>
-                    <td>Date 6</td>
-                    <td>Status 6</td>
-                  </tr>
-                  <tr>
-                    <td>7</td>
-                    <td>Type 7</td>
-                    <td>Reference 7</td>
-                    <td>Network 7</td>
-                    <td>Amount 7</td>
-                    <td>Date 7</td>
-                    <td>Status 7</td>
-                  </tr>
-                  <tr>
-                    <td>8</td>
-                    <td>Type 8</td>
-                    <td>Reference 8</td>
-                    <td>Network 8</td>
-                    <td>Amount 8</td>
-                    <td>Date 8</td>
-                    <td>Status 8</td>
-                  </tr>
-                  <tr>
-                    <td>9</td>
-                    <td>Type 9</td>
-                    <td>Reference 9</td>
-                    <td>Network 9</td>
-                    <td>Amount 9</td>
-                    <td>Date 9</td>
-                    <td>Status 9</td>
-                  </tr>
-                  <tr>
-                    <td>10</td>
-                    <td>Type 10</td>
-                    <td>Reference 10</td>
-                    <td>Network 10</td>
-                    <td>Amount 10</td>
-                    <td>Date 10</td>
-                    <td>Status 10</td>
-                  </tr>
-                  <tr>
-                    <td>11</td>
-                    <td>Type 11</td>
-                    <td>Reference 11</td>
-                    <td>Network 11</td>
-                    <td>Amount 11</td>
-                    <td>Date 11</td>
-                    <td>Status 11</td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="pagination">
-                <div>Rows per page: <span style="color: black">10</span></div>
-                <button onclick="prevPage()">
-                  <img src="assets/prev.png" alt="" />
-                </button>
-                <button onclick="nextPage()">
-                  <img src="assets/dashboard-next.png" alt="" />
-                </button>
-              </div>
+        </div>
+        <div class="transaction-table" id="transaction-table">
+          <div class="networks dashboard-networks">
+            <img src="assets/9mobile 1.png" alt="" class="n-mobile" />
+            <img src="assets/Airtel 3.png" alt="" class="airtel" /><br />
+            <img src="assets/Glo 1.png" alt="" class="glo" />
+            <img src="assets/MTN 2.png" alt="" class="mtn" />
+          </div>
+          <div class="table-heading">Recent Transactions</div>
+          <div class="dashboard-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>SN</th>
+                  <th>Type</th>
+                  <th>Reference</th>
+                  <th>Network</th>
+                  <th>Amount</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Type 1</td>
+                  <td>Reference 1</td>
+                  <td>Network 1</td>
+                  <td>Amount 1</td>
+                  <td>Date 1</td>
+                  <td>Status 1</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Type 2</td>
+                  <td>Reference 2</td>
+                  <td>Network 2</td>
+                  <td>Amount 2</td>
+                  <td>Date 2</td>
+                  <td>Status 2</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Type 3</td>
+                  <td>Reference 3</td>
+                  <td>Network 3</td>
+                  <td>Amount 3</td>
+                  <td>Date 3</td>
+                  <td>Status 3</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Type 4</td>
+                  <td>Reference 4</td>
+                  <td>Network 4</td>
+                  <td>Amount 4</td>
+                  <td>Date 4</td>
+                  <td>Status 4</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Type 5</td>
+                  <td>Reference 5</td>
+                  <td>Network 5</td>
+                  <td>Amount 5</td>
+                  <td>Date 5</td>
+                  <td>Status 5</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Type 6</td>
+                  <td>Reference 6</td>
+                  <td>Network 6</td>
+                  <td>Amount 6</td>
+                  <td>Date 6</td>
+                  <td>Status 6</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Type 7</td>
+                  <td>Reference 7</td>
+                  <td>Network 7</td>
+                  <td>Amount 7</td>
+                  <td>Date 7</td>
+                  <td>Status 7</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Type 8</td>
+                  <td>Reference 8</td>
+                  <td>Network 8</td>
+                  <td>Amount 8</td>
+                  <td>Date 8</td>
+                  <td>Status 8</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Type 9</td>
+                  <td>Reference 9</td>
+                  <td>Network 9</td>
+                  <td>Amount 9</td>
+                  <td>Date 9</td>
+                  <td>Status 9</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Type 10</td>
+                  <td>Reference 10</td>
+                  <td>Network 10</td>
+                  <td>Amount 10</td>
+                  <td>Date 10</td>
+                  <td>Status 10</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Type 11</td>
+                  <td>Reference 11</td>
+                  <td>Network 11</td>
+                  <td>Amount 11</td>
+                  <td>Date 11</td>
+                  <td>Status 11</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="pagination">
+              <div>Rows per page: <span style="color: black">10</span></div>
+              <button onclick="prevPage()">
+                <img src="assets/prev.png" alt="" />
+              </button>
+              <button onclick="nextPage()">
+                <img src="assets/dashboard-next.png" alt="" />
+              </button>
             </div>
           </div>
-        </section>
-      </div>
-      <div class="background">
-        <img src="assets/dashboard-back.png" alt="" />
-      </div>
-    </main>
+        </div>
+      </section>
+    </div>
+    <div class="background">
+      <img src="assets/dashboard-back.png" alt="" />
+    </div>
+  </main>
 
-    <script>
-      let currentPage = 0;
-      const rowsPerPage = 10;
-      const totalRows = document.querySelector("table tbody").rows.length;
+  <script>
+    let currentPage = 0;
+    const rowsPerPage = 10;
+    const totalRows = document.querySelector("table tbody").rows.length;
 
-      function showPage(page) {
-        const rows = document.querySelectorAll("table tbody tr");
-        const startIndex = page * rowsPerPage;
-        const endIndex = startIndex + rowsPerPage;
+    function showPage(page) {
+      const rows = document.querySelectorAll("table tbody tr");
+      const startIndex = page * rowsPerPage;
+      const endIndex = startIndex + rowsPerPage;
 
-        rows.forEach((row, index) => {
-          if (index >= startIndex && index < endIndex) {
-            row.style.display = "table-row";
-          } else {
-            row.style.display = "none";
-          }
-        });
-      }
-
-      function nextPage() {
-        if (currentPage < Math.ceil(totalRows / rowsPerPage) - 1) {
-          currentPage++;
-          showPage(currentPage);
-        }
-      }
-
-      function prevPage() {
-        if (currentPage > 0) {
-          currentPage--;
-          showPage(currentPage);
-        }
-      }
-
-      showPage(currentPage);
-
-      function hideSide() {
-        const text = document.getElementById("hide-button");
-        if (text.innerText == "Hide") {
-          text.innerText = "Show";
+      rows.forEach((row, index) => {
+        if (index >= startIndex && index < endIndex) {
+          row.style.display = "table-row";
         } else {
-          text.innerText = "Hide";
+          row.style.display = "none";
         }
-        const sidebar = document.querySelector(".dashboard-sidebar");
-        sidebar.classList.toggle("hide");
-        const dashboardMain = document.querySelector(".dashboard");
-        dashboardMain.classList.toggle("hide");
-        const dashboardMainSection = document.querySelector(
-          ".dashboard-main section"
-        );
-        dashboardMainSection.classList.toggle("hide");
-      }
+      });
+    }
 
-      function mobileHideSide() {
-        const text = document.getElementById("mobile-hide-button");
-        const sidebar = document.querySelector(".dashboard-sidebar");
-        sidebar.classList.toggle("hide");
+    function nextPage() {
+      if (currentPage < Math.ceil(totalRows / rowsPerPage) - 1) {
+        currentPage++;
+        showPage(currentPage);
       }
-      function showSide() {
-        const text = document.getElementById("show-button");
-        const sidebar = document.querySelector(".dashboard-sidebar");
-        sidebar.classList.toggle("hide");
+    }
+
+    function prevPage() {
+      if (currentPage > 0) {
+        currentPage--;
+        showPage(currentPage);
       }
-    </script>
-  </body>
+    }
+
+    showPage(currentPage);
+
+    const text = document.getElementById("hide-button");
+    const sidebar = document.querySelector(".dashboard-sidebar");
+    const dashboardMain = document.querySelector(".dashboard");
+    const dashboardMainSection = document.querySelector(
+      ".dashboard-main section"
+    );
+    const mobile = document.querySelector(".mobile-sidebar");
+
+    function hideSide() {
+      if (text.innerText == "Hide") {
+        text.innerText = "Show";
+      } else {
+        text.innerText = "Hide";
+      }
+      sidebar.classList.toggle("hide");
+      dashboardMain.classList.toggle("hide");
+
+      dashboardMainSection.classList.toggle("hide");
+    }
+
+    function mobileHideSide() {
+      mobile.classList.toggle("hide");
+    }
+    function showSide() {
+      mobile.classList.toggle("hide");
+    }
+  </script>
+</body>
+
 </html>

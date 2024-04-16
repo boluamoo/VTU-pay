@@ -613,6 +613,12 @@ footer {
 }
 
 /* DASHBOARD */
+.mobile-sidebar,
+.dashboard,
+.dashboard-sidebar {
+    transition: 0.3s ease-in;
+}
+
 .dashboard-sidebar {
     position: absolute;
     top: 0;
@@ -626,13 +632,22 @@ footer {
     overflow-x: hidden;
     background-color: var(--blue);
 }
+
 .dashboard-sidebar.hide {
     left: -16%;
 }
 
+#mobile-hide-button,
+#show-button {
+    display: none;
+}
+
 .dashboard-logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 116.5px;
-    padding: 12% 3%;
+    padding: 12% 5%;
 }
 
 .sidebar-image-link {
@@ -723,7 +738,7 @@ footer {
     min-height: 100vh;
 }
 
-.dashboard.hide{
+.dashboard.hide {
     margin-left: 0%;
     width: 100%;
 }
@@ -752,7 +767,7 @@ footer {
     z-index: 20;
 }
 
-.dashboard-main .hide-sidebar{
+.dashboard-main .hide-sidebar {
     position: relative;
     top: 32px;
     margin-right: 15px;
@@ -806,9 +821,9 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top: 116.5px;
-    padding-left: 5%;
-    padding-right: 10px;
+    padding: 0 10px 0 5%;
 }
+
 .dashboard-main section.hide {
     width: 100%;
 }
@@ -914,13 +929,12 @@ footer {
     width: 100%;
 }
 
-.welcome-balance, 
+.welcome-balance,
 .dashboard-buy-airtime,
 .dashboard-buy-data,
 .referral-earnings {
     height: 265px;
     min-width: 300px;
-    justify-self: center;
     margin: 10px 0;
 }
 
@@ -2383,6 +2397,44 @@ input[type="tel"] {
         font-size: 14px;
     }
 
+    /* DASHBOARD */
+    .mobile-sidebar {
+        display: none;
+    }
+
+    .mobile-sidebar.hide {
+        display: block;
+    }
+
+    .dashboard-sidebar {
+        width: 230px;
+        z-index: 1000;
+    }
+
+    .dashboard {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .dashboard-main section {
+        width: 100%;
+        padding: 5%;
+    }
+
+    #mobile-hide-button,
+    #show-button {
+        display: block;
+    }
+
+    #hide-button {
+        display: none;
+    }
+
+    .content-label p {
+        font-size: 20px;
+    }
+
+
     /* CONTACT */
     .contact-us-main {
         padding-top: 10px;
@@ -2760,6 +2812,32 @@ input[type="tel"] {
 }
 
 @media (max-width: 430px) {
+
+    /* DASHBOARD */
+    .welcome-balance,
+    .dashboard-buy-airtime,
+    .dashboard-buy-data,
+    .referral-earnings {
+        min-width: 0px;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .networks {
+        display: none;
+    }
+
+    .updates {
+        flex-direction: column;
+    }
+
+    .verify-account {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    /* LANDING */
+
     .section-one-heading {
         font-size: 24px;
         line-height: 30px;
