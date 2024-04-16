@@ -20,9 +20,7 @@
           </a>
         </div>
         <div class="hide-sidebar">
-          <button onclick="mobileHideSide()" id="hide-button">
-            Hide
-          </button>
+          <button onclick="mobileHideSide()" id="mobile-hide-button">Hide</button>
         </div>
       </div>
       <hr class="first-hr" />
@@ -381,22 +379,12 @@
       }
 
       function mobileHideSide() {
-        const text = document.getElementById("hide-button");
-        if (text.innerText == "Hide") {
-          text.innerText = "Show";
-        } else {
-          text.innerText = "Hide";
-        }
+        const text = document.getElementById("mobile-hide-button");
         const sidebar = document.querySelector(".dashboard-sidebar");
         sidebar.classList.toggle("hide");
       }
       function showSide() {
         const text = document.getElementById("show-button");
-        if (text.innerText == "Hide") {
-          text.innerText = "Show";
-        } else {
-          text.innerText = "Hide";
-        }
         const sidebar = document.querySelector(".dashboard-sidebar");
         sidebar.classList.toggle("hide");
       }
