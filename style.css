@@ -568,7 +568,7 @@ footer {
 
 /* DASHBOARD */
 .dashboard-sidebar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     display: flex;
@@ -576,8 +576,12 @@ footer {
     justify-content: space-between;
     width: 16%;
     height: 100%;
+    /* z-index: 10000; */
     overflow-x: hidden;
     background-color: var(--blue);
+}
+.dashboard-sidebar.hide {
+    left: -16%;
 }
 
 .dashboard-logo-container {
@@ -673,6 +677,11 @@ footer {
     min-height: 100vh;
 }
 
+.dashboard.hide{
+    margin-left: 0%;
+    width: 100%;
+}
+
 .bold {
     font-weight: 800;
 }
@@ -696,6 +705,16 @@ footer {
     background-color: rgba(249, 249, 249, 1);
     z-index: 20;
 }
+
+.dashboard-main .hide-sidebar{
+    position: relative;
+    top: 32px;
+    margin-right: 15px;
+}
+
+/* .dashboard-sidebar-hide{
+    left: -16%;
+}  */
 
 .dashboard-main .search-bar {
     background-color: #F4F5F7;
@@ -733,15 +752,19 @@ footer {
 }
 
 .dashboard-main section {
-    position: relative;
+    position: fixed;
+    height: 100%;
     z-index: 10;
-    /* height: 100vh; */
+    width: 84%;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     margin-top: 116.5px;
     padding-left: 5%;
     padding-right: 10px;
+}
+.dashboard-main section.hide {
+    width: 100%;
 }
 
 .dashboard .background img {
@@ -843,12 +866,20 @@ footer {
     gap: 2%;
     margin: 10px 10px 20px 0px;
     width: 100%;
+}
+
+.welcome-balance, 
+.dashboard-buy-airtime,
+.dashboard-buy-data,
+.referral-earnings {
     height: 265px;
+    min-width: 300px;
+    justify-self: center;
+    margin: 10px 0;
 }
 
 .welcome-balance {
     width: 37%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -888,7 +919,6 @@ footer {
 
 .dashboard-buy-airtime {
     width: 25%;
-    height: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -933,7 +963,6 @@ footer {
 
 .dashboard-buy-data {
     width: 25%;
-    height: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -993,9 +1022,11 @@ footer {
 
 .dashboard-table {
     width: 100%;
+    height: 100%;
     background-color: #E2ECF7;
     border: 1px solid #EAEAEA;
     border-radius: 10px;
+    overflow-x: scroll;
 }
 
 .dashboard-table table {
