@@ -1,0 +1,81 @@
+:root {
+  --blue: #2d66a8;
+  --red-text: #f55151;
+  --red2: #ff0000;
+  --p: #525252;
+  --pink: #ff8e8e;
+  --white: #ffffff;
+  --purple: #9747ff;
+  --light-blue: #e4effa;
+  --light-red: #f63636;
+  --light-grey: #f5f9ff;
+  --light-brown: #f7f7f7;
+  --main-width: 90%;
+  --heading: #232a42;
+  --heading-font: "Montserrat", sans-serif;
+  --p-font: "Plus Jakarta Sans", sans-serif;
+  --button-padding: 32px 40px;
+  --thin: 100;
+  --extra-light: 200;
+  --light: 300;
+  --normal: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+  --extra-bold: 800;
+  --black: 900;
+  --vending-font: "Questrial", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+}
+
+.modal {
+    width: 90%;
+    height: 90%;
+    border: 1px solid pink;
+    position: relative;
+    background-color: #232a42;
+}
+
+.modal-content {
+    width: 50%;
+    height: 50%;
+    border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-an {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100px;
+  padding: 10px;
+  margin: auto;
+}
