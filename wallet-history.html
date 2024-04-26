@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wallet</title>
+  <title>Wallet History</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="wallet-history.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -32,7 +31,7 @@
         <p>Account Name:</p>
         <strong>Allensar User</strong>
       </div>
-      <span class="close">Close</span>
+      <span class="modal-close" onclick="closeModal()">Close</span>
     </div>
   </div>
   <div class="top-banner">
@@ -44,7 +43,7 @@
     <div class="wallet-history">
       <div class="wallet-history-head">
         <div class="main-wallet-heading red">Wallet History</div>
-        <div class="add-money wallet-history-add">
+        <div class="add-money wallet-history-add modal-open" onclick="openModal()">
           <div class="add-logo">
             <img src="assets/add-money.png" alt="" />
           </div>
@@ -191,6 +190,7 @@
     <img src="assets/vending-background.png" alt="" />
   </div>
   <script src="table.js"></script>
+  <script src="modal.js"></script>
 </body>
 
 </html>
