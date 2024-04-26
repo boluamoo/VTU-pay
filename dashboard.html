@@ -44,7 +44,7 @@
           <div class="sidebar-link-image">
             <img src="assets/dashboard-wallet.png" alt="" />
           </div>
-          <div class="sidebar-link"><a href="wallet.html">Wallet</a></div>
+          <div class="sidebar-link"><a href="wallet-history.html">Wallet</a></div>
         </div>
         <div class="sidebar-image-link">
           <div class="sidebar-link-image">
@@ -328,40 +328,8 @@
     </div>
   </main>
 
+  <script src="table.js"></script>
   <script>
-    let currentPage = 0;
-    const rowsPerPage = 10;
-    const totalRows = document.querySelector("table tbody").rows.length;
-
-    function showPage(page) {
-      const rows = document.querySelectorAll("table tbody tr");
-      const startIndex = page * rowsPerPage;
-      const endIndex = startIndex + rowsPerPage;
-
-      rows.forEach((row, index) => {
-        if (index >= startIndex && index < endIndex) {
-          row.style.display = "table-row";
-        } else {
-          row.style.display = "none";
-        }
-      });
-    }
-
-    function nextPage() {
-      if (currentPage < Math.ceil(totalRows / rowsPerPage) - 1) {
-        currentPage++;
-        showPage(currentPage);
-      }
-    }
-
-    function prevPage() {
-      if (currentPage > 0) {
-        currentPage--;
-        showPage(currentPage);
-      }
-    }
-
-    showPage(currentPage);
 
     const text = document.getElementById("hide-button");
     const sidebar = document.querySelector(".dashboard-sidebar");

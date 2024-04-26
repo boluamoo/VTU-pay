@@ -34,6 +34,10 @@
     font-family: var(--vending-font);
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
 a {
     text-decoration: none;
     font-family: inherit;
@@ -2836,7 +2840,7 @@ input[type="tel"] {
         flex-direction: column;
     }
 
-    .add-money p{
+    .add-money p {
         font-size: 15px;
     }
 
@@ -2849,11 +2853,11 @@ input[type="tel"] {
         font-size: 22px;
     }
 
-    .welcome-balance-amount{
+    .welcome-balance-amount {
         font-size: 26px;
     }
 
-    .airtime-base-text{
+    .airtime-base-text {
         font-size: 25px;
     }
 

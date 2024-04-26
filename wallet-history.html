@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wallet</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="wallet-history.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="wallet-history-body">
+  <div class="modal">
+    <div class="modal-content">
+      <strong class="modal-header">
+        Kindly fund your wallet from any bank with the following details
+      </strong>
+      <div class="modal-an">
+        <p>Bank Name:</p>
+        <strong>Taj_Pinspay</strong>
+      </div>
+      <div class="modal-an">
+        <p>Account Number:</p>
+        <strong>1234567890</strong>
+      </div>
+      <div class="modal-an">
+        <p>Account Name:</p>
+        <strong>Allensar User</strong>
+      </div>
+      <span class="close">Close</span>
+    </div>
+  </div>
+  <div class="top-banner">
+    <a href="index.html">
+      <img src="assets/dashboard-logo.png" alt="">
+    </a>
+  </div>
+  <div class="main">
+    <div class="wallet-history">
+      <div class="wallet-history-head">
+        <div class="main-wallet-heading red">Wallet History</div>
+        <div class="add-money wallet-history-add">
+          <div class="add-logo">
+            <img src="assets/add-money.png" alt="" />
+          </div>
+          <p>Fund My Wallet</p>
+        </div>
+      </div>
+      <a href="dashboard.html">
+        <div class="wallet-back-button">
+          <img src="assets/airtime-back.png" alt="" srcset="" />
+        </div>
+      </a>
+      <div class="wallet-history-table">
+        <div class="transaction-table" id="transaction-table">
+          <div class="wallet-history-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>SN</th>
+                  <th>Type</th>
+                  <th>Reference</th>
+                  <th>Network</th>
+                  <th>Amount</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Type 1</td>
+                  <td>Reference 1</td>
+                  <td>Network 1</td>
+                  <td>Amount 1</td>
+                  <td>Date 1</td>
+                  <td>Status 1</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Type 2</td>
+                  <td>Reference 2</td>
+                  <td>Network 2</td>
+                  <td>Amount 2</td>
+                  <td>Date 2</td>
+                  <td>Status 2</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Type 3</td>
+                  <td>Reference 3</td>
+                  <td>Network 3</td>
+                  <td>Amount 3</td>
+                  <td>Date 3</td>
+                  <td>Status 3</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Type 4</td>
+                  <td>Reference 4</td>
+                  <td>Network 4</td>
+                  <td>Amount 4</td>
+                  <td>Date 4</td>
+                  <td>Status 4</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Type 5</td>
+                  <td>Reference 5</td>
+                  <td>Network 5</td>
+                  <td>Amount 5</td>
+                  <td>Date 5</td>
+                  <td>Status 5</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Type 6</td>
+                  <td>Reference 6</td>
+                  <td>Network 6</td>
+                  <td>Amount 6</td>
+                  <td>Date 6</td>
+                  <td>Status 6</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Type 7</td>
+                  <td>Reference 7</td>
+                  <td>Network 7</td>
+                  <td>Amount 7</td>
+                  <td>Date 7</td>
+                  <td>Status 7</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Type 8</td>
+                  <td>Reference 8</td>
+                  <td>Network 8</td>
+                  <td>Amount 8</td>
+                  <td>Date 8</td>
+                  <td>Status 8</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Type 9</td>
+                  <td>Reference 9</td>
+                  <td>Network 9</td>
+                  <td>Amount 9</td>
+                  <td>Date 9</td>
+                  <td>Status 9</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Type 10</td>
+                  <td>Reference 10</td>
+                  <td>Network 10</td>
+                  <td>Amount 10</td>
+                  <td>Date 10</td>
+                  <td>Status 10</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Type 11</td>
+                  <td>Reference 11</td>
+                  <td>Network 11</td>
+                  <td>Amount 11</td>
+                  <td>Date 11</td>
+                  <td>Status 11</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="pagination">
+              <div>Rows per page: <span style="color: black">10</span></div>
+              <button onclick="prevPage()">
+                <img src="assets/prev.png" alt="" />
+              </button>
+              <button onclick="nextPage()">
+                <img src="assets/dashboard-next.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="background">
+    <img src="assets/vending-background.png" alt="" />
+  </div>
+  <script src="table.js"></script>
+</body>
+
+</html>
