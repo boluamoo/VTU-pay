@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Questrial&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body class="one-body">
+    <div class="top-banner">
+        <a href="index.html">
+            <img src="assets/dashboard-logo.png" alt="">
+        </a>
+    </div>
+    <div class="sign-up-main">
+        <div class="sign-up-head">
+            Please, be sure that you're on http://oatek.net
+        </div>
+        <div class="sign-up-body">
+            <div class="sign-in-one">
+                <div class="sign-in-main-one">
+                    <p class="sign-in-main-text-one">SignUp to</p>
+                    <p class="sign-in-sub-text">Double Check the Data Provided</p>
+                </div>
+                <div class="base">
+                    <img src="assets/next.png" alt="" class="next-btn-one" />
+                </div>
+            </div>
+            <div class="auth-content">
+                <p class="create-account">
+                    To sign in, please type in the email address linked to your loripay
+                    account.
+                </p>
+                <form action="" class="sign-in-form">                    <label for="email">User Name</label>
+                    <input type="email" name="" id="email" placeholder="example@gmail.com" /><br />
+                    <div class="user-name">
+                        <div>
+                            <label for="firstname">First Name</label><br><br>
+                            <input type="text" id="first-name" placeholder="given name" />
+                        </div>
+                        <br />
+                        <div>
+                            <label for="lastname">Last Name</label><br><br>
+                            <input type="text" id="last-name" placeholder="family name" />
+                        </div>
+                    </div>
+                    <br />
+                    <label for="phone">Phone Number</label>
+                    <div class="phone-input">
+                        <span class="country-code">+234:</span>
+                        <input type="tel" id="phone" name="phone" placeholder="804 *** ****">
+                    </div> <br>
+                    <div class="password">
+                        <label for="password">Password</label>
+                        <div class="password-input">
+                            <input type="password" name="" id="password" placeholder="*********" />
+                            <div class="password-image">
+                                <img src="assets/open-eye.png" alt="" class="password-icon"
+                                    onclick="togglePasswordVisibility()" />
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="password">
+                        <label for="cpassword">Confirm Password</label>
+                        <div class="password-input">
+                            <input type="password" name="" id="cpassword" placeholder="*********" />
+                            <div class="password-image">
+                                <img src="assets/open-eye.png" alt="" class="password-icon"
+                                    onclick="togglePasswordVisibility()" />
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="base">
+                        <div class="next-one">
+                            <img src="assets/back.png" alt="" class="next-btn-one" />
+                            <img src="assets/next.png" alt="" class="next-btn-one" />
+                        </div>
+                        <div style="display: flex; gap: 2rem; width: 100%; justify-content: space-between;">
+                            <a href="sign-in.html" class="go-button">Sign In</a>
+                            <a href="sign-up2.html" class="go-button">Let's Go</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="background">
+        <img src="../data-vending1/assets/vending-background.png" alt="" />
+    </div>
+</body>
+<script src="../sign-in/index.js"></script>
+
+</html>
